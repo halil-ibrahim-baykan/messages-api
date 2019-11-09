@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { Movie, movieRouter } = require("./sequelize-rest");
+const movieRouter = require("./sequelize-rest");
 const cors = require("cors");
 
 const app = express();
