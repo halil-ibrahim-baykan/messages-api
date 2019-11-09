@@ -1,11 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const movieRouter = require("./sequelize-rest");
-// const cors = require("cors");
 
 const app = express();
 const port = 3000;
-// const corsMiddleware = cors();
+
 const jsonParser = bodyParser.json();
 
 let count = 0;
@@ -19,7 +18,6 @@ const countMiddleware = (req, res, next) => {
   count++;
 };
 
-// app.use(corsMiddleware);
 app.use(jsonParser);
 app.use(movieRouter);
 
