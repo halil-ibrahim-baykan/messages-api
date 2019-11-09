@@ -7,7 +7,6 @@ const app = express();
 const port = 3000;
 const corsMiddleware = cors();
 const jsonParser = bodyParser.json();
-0;
 
 let count = 0;
 
